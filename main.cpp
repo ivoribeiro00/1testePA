@@ -59,6 +59,7 @@ int main() {
     disciplineList.addStudentToDiscipline(student2, discipline1);
     disciplineList.addStudentToDiscipline(student15, discipline1);
     disciplineList.addStudentToDiscipline(student4, discipline1);
+    disciplineList.addStudentToDiscipline(student3, discipline1);
 
 
     discipline1.displayStudentsOfDiscipline(discipline1);
