@@ -25,9 +25,9 @@ public:
 
     void displayStudentsOfDiscipline(Discipline discipline);
 
-    int getSemester() const;
+    const int &getSemester() const;
 
-    int getYear() const;
+    const int &getYear() const;
 
 
 private:

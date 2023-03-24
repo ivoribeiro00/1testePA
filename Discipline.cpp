@@ -18,6 +18,14 @@ const std::string &Discipline::getName() const {
     return name;
 }
 
+const int &Discipline::getSemester() const {
+    return semester;
+}
+
+const int &Discipline::getYear() const {
+    return year;
+}
+
 void Discipline::DisplayOrder() {
 
     //todo display the students of a discipline in alphabetical order
@@ -63,14 +71,6 @@ void Discipline::displayStudentsOfDiscipline(Discipline discipline) {
     //todo display the students of a discipline
     discipline.DisplayOrder();
 
-}
-
-int Discipline::getSemester() const {
-    return semester;
-}
-
-int Discipline::getYear() const {
-    return year;
 }
 
 
