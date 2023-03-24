@@ -1,0 +1,11 @@
+L9011	Complementos de Analise Matematica
+L9012	Fisica
+L9013	Complementos de Programação
+L9014	Algoritmos e Estruturas de Dados
+L9015	Redes de Comunicação
+L9016	Probabilidades e Estatistica
+L9017	Base de Dados
+L9018	Programação Avançada
+L9019	Computação e Representação Grafica
+L9020	Historia da Cultura Portuguesa
+L9021	Etica

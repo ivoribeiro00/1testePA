@@ -1,0 +1,45 @@
+Implement the student, grade and discipline relations.
+- You need to be able to insert/retrieve students (by Id).
+OK
+
+- You need to be able to display a list of students of a certain
+ discipline in alphabetical order.
+ OK?
+
+- You need to be able to display min, max, average and std-dev
+ of the student grades of a class from highest to the lowest grade.
+
+- You need to be able to display all grades of a student (ordered
+ by year and semester).
+
+
+The following data is provided in 2 files (and you need to create a grade file).
+
+
+Disciplines:
+
+
+Students:
+11058921 Afonso Gil Chorao Abreu Cunha
+11108821 Afonso Schwarz Martins Roncon Couto
+11094620 Breno Kiniane Faustino De Oliveira
+11037320 David Pires Rita Dos Santos Coelho
+11028916 Diogo Cabeleira De Freitas
+11085620 Diogo Rafael Cleriguinho Simões
+11040620 Guilherme Gonçalves Da Cruz Cabral
+11109322 Ivo José Bento Ribeiro
+11084821 João Henrique Gonçalves Costa
+11102920 João Martinez Conduto Aboim
+11005421 João Morais Bagulho
+11057718 João Pedro Gomes Alves De Almeida Costa
+11050218 João Rafael Silva Angrola
+11012421 Jorge Alexandre Gomes Madeira
+11011521 Matheus Castro Maciel Lopes Marciano
+11001622 Pedro Paulo Oom De Vasconcellos E Souza
+11097121 Salvador Lacerda Folque De Gouveia
+11094421 Tomás Madeira Carrasco Guilherme
+11038021 Xavier Maria Marta De Barros
+
+Grades
+L9016 11038021 20
+....
