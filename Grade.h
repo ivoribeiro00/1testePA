@@ -15,6 +15,9 @@ class Grade {
     //eu preciso da nota
 public:
 
+    Grade(const std::list<Discipline> &disciplines,
+          const std::list<Student> &students,
+          int grade);
 
 
 private:
