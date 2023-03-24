@@ -25,6 +25,10 @@ public:
 
     void displayStudentsOfDiscipline(Discipline discipline);
 
+    int getSemester() const;
+
+    int getYear() const;
+
 
 private:
     std::string name;
@@ -42,8 +46,6 @@ class DisciplineList {
 public:
 
     void addStudentToDiscipline(Student &student, Discipline &discipline);
-
-
 
     //bool containsDiscipline(Discipline& discipline)const;
 

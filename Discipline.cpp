@@ -65,6 +65,14 @@ void Discipline::displayStudentsOfDiscipline(Discipline discipline) {
 
 }
 
+int Discipline::getSemester() const {
+    return semester;
+}
+
+int Discipline::getYear() const {
+    return year;
+}
+
 
 void DisciplineList::addStudentToDiscipline(Student &student, Discipline &discipline) {
 
