@@ -57,12 +57,13 @@ int main() {
     //add a student to a discipline
     disciplineList.addStudentToDiscipline(student1, discipline1);
     disciplineList.addStudentToDiscipline(student2, discipline1);
-    disciplineList.addStudentToDiscipline(student15, discipline1);
+    //disciplineList.addStudentToDiscipline(student15, discipline1);
     disciplineList.addStudentToDiscipline(student4, discipline1);
     disciplineList.addStudentToDiscipline(student3, discipline1);
+    disciplineList.addStudentToDiscipline(student8,discipline1);
 
 
-    discipline1.displayStudentsOfDiscipline(discipline1);
+    disciplineList.displayStudentsOfDiscipline(discipline1);
 
 
 

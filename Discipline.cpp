@@ -66,7 +66,7 @@ void Discipline::addStudent(Student &student) {
 }
 
 
-void Discipline::displayStudentsOfDiscipline(Discipline discipline) {
+void DisciplineList::displayStudentsOfDiscipline(Discipline discipline) {
 
     //todo display the students of a discipline
     discipline.DisplayOrder();

@@ -23,8 +23,6 @@ public:
 
     void addStudent(Student &student);
 
-    void displayStudentsOfDiscipline(Discipline discipline);
-
     const int &getSemester() const;
 
     const int &getYear() const;
@@ -46,6 +44,8 @@ class DisciplineList {
 public:
 
     void addStudentToDiscipline(Student &student, Discipline &discipline);
+
+    void displayStudentsOfDiscipline(Discipline discipline);
 
     //bool containsDiscipline(Discipline& discipline)const;
 
