@@ -49,6 +49,7 @@ public:
 
     //bool containsDiscipline(Discipline& discipline)const;
 
+
 private:
     DisciplineList_t list_of_discipline;
     //std::list<Student*> students;
