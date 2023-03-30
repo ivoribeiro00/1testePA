@@ -8,7 +8,7 @@ OK
 
 - You need to be able to display min, max, average and std-dev
  of the student grades of a class from highest to the lowest grade.
-
+ok?
 
 - You need to be able to display all grades of a student (ordered
  by year and semester).
