@@ -67,7 +67,7 @@ int main() {
     disciplineList.displayStudentsOfDiscipline(discipline1);
 
     //add a grade to a student of discipline1
-    disciplineList.addGradeToStudent(student1, discipline1, 15);
+
 
 
 
