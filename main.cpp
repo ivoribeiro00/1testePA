@@ -61,6 +61,9 @@ int main() {
     disciplineList.addStudentToDiscipline(student4, discipline1);
     disciplineList.addStudentToDiscipline(student3, discipline1);
     disciplineList.addStudentToDiscipline(student8,discipline1);
+    disciplineList.addStudentToDiscipline(student15,discipline1);
+    disciplineList.addStudentToDiscipline(student16,discipline1);
+    disciplineList.addStudentToDiscipline(student14,discipline1);
 
 
 

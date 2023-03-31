@@ -13,6 +13,14 @@ OK
 - You need to be able to display all grades of a student (ordered
  by year and semester).
 
+//no estudante quero a nota da disciplina AED
+//lista de estudantes na disciplina
+//get grade da disciplina X
+
+
+void Student::addGrade(Discipline* discipline, double grade){}
+double Discipline::getGrade(const Student& student) const {}
+
 
 The following data is provided in 2 files (and you need to create a grade file).
 
