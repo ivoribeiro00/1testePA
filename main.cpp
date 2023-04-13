@@ -2,9 +2,13 @@
 
 #include "Student.h"
 #include "Discipline.h"
+#include "Grade.h"
 
 
 int main() {
+
+
+
     Student student1("Ivo José Bento Ribeiro", 11109322);
     Student student2("Afonso Gil Chorao Abreu Cunha", 11108821);
     Student student3("Breno Kiniane Faustino De Oliveira", 11094620);
@@ -68,6 +72,23 @@ int main() {
 
 
     disciplineList.displayStudentsOfDiscipline(discipline1);
+    //printf /n
+    std::cout << std::endl;
+    std::cout << std::endl;
+    std::cout << std::endl;
+
+
+    //add a grade to a student of discipline1
+    //disciplineList.addGradeToStudent(student1, discipline1, 10);
+
+    //display all grades of a student ordered by year and semester
+    //disciplineList.displayStudentsGrades( student1);
+
+
+    //disciplineList.displayStudentsGrades(discipline1);
+
+
+
 
     //add a grade to a student of discipline1
 

@@ -9,23 +9,32 @@
 #include <list>
 #include "Discipline.h"
 
+
 class Grade {
     //eu preciso do codigo da disciplina
     //eu preciso do codigo do aluno
     //eu preciso da nota
 public:
 
-    Grade(const std::list<Discipline> &disciplines,
-          const std::list<Student> &students,
-          int grade);
+    Grade(float value, Student* student, Discipline* discipline);
 
+    const Grade &getValue();
 
 private:
-    std::list<Discipline> disciplines;
-    std::list<Student> students;
-    int grade;
+    //std::list<Discipline*> disciplines;
+    //std::list<Student*> students;
+    float value;
+    int year;
+    int semester;
 
+};
 
+typedef std::list<Grade> ListOfGrades;
+
+class GradeList{
+public:
+private:
+    ListOfGrades list_of_grades;
 };
 
 

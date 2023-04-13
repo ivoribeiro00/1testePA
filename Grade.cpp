@@ -4,8 +4,13 @@
 
 #include "Grade.h"
 
-Grade::Grade(const std::list<Discipline> &disciplines,
-             const std::list<Student> &students,
-             int grade) : disciplines(disciplines),
-             students(students),
-             grade(grade) {}
+Grade::Grade(float value, Student *student, Discipline *discipline) {
+    this->value;
+}
+
+const Grade &Grade::getValue() {
+    return *this;
+}
+
+
+

@@ -10,6 +10,7 @@
 #include <list>
 #include "Student.h"
 
+
 class Discipline {
 public:
 
@@ -27,6 +28,12 @@ public:
 
     const int &getYear() const;
 
+    //Display the grades of a student in a discipline
+
+    void displayGradesStudent(Student &student);
+
+    void displayGradesDiscipline(Discipline &discipline);
+
 
 private:
     std::string name;
@@ -34,6 +41,7 @@ private:
     int semester;
     int year;
     std::list<Student *> students;
+
 
 };
 
@@ -47,11 +55,15 @@ public:
 
     void displayStudentsOfDiscipline(Discipline discipline);
 
-    //bool containsDiscipline(Discipline& discipline)const;
+    //todo display students grades of a discipline
+    void displayStudentsGrades(Student &student);
 
+
+    void addGradeToStudent(Student &student, Discipline &discipline, float grade);
 
 private:
     DisciplineList_t list_of_discipline;
+    std::list<Student *> students;
     //std::list<Student*> students;
 
 

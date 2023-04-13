@@ -66,6 +66,8 @@ void Discipline::addStudent(Student &student) {
 }
 
 
+
+
 void DisciplineList::displayStudentsOfDiscipline(Discipline discipline) {
 
     //todo display the students of a discipline
@@ -85,6 +87,7 @@ void DisciplineList::addStudentToDiscipline(Student &student, Discipline &discip
     discipline.addStudent(student);
 
 }
+
 /*
 bool DisciplineList::containsDiscipline(Discipline &discipline) const {
     //todo  iterate over the list of discipline
@@ -97,5 +100,10 @@ bool DisciplineList::containsDiscipline(Discipline &discipline) const {
     return false;
 }
  */
+
+
+
+
+
 
 

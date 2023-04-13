@@ -8,6 +8,8 @@
 
 #include <string>
 #include <list>
+#include <vector>
+
 
 
 class Student {
@@ -22,7 +24,6 @@ public:
     int displayStudent(int student_id);
 
 
-
     void display();
 
     int getStudentId() const;
@@ -30,12 +31,28 @@ public:
     const std::string &getName() const;
 
 
+    void addGrade(int grade);
+
+    int getMinGrade() const;
+
+    int getMaxGrade() const;
+
+    double getAverageGrade() const;
+
+    double getStandardDeviation() const;
+
+
+    void getDisciplines();
+
+    void displayGrades();
+
 private:
     std::uint32_t student_id;
     std::string name;
     std::uint32_t birthDate;
     std::uint32_t email;
 
+    std::vector<int> grades;
 };
 
 typedef std::list<Student> StudentList_t;
@@ -43,7 +60,7 @@ typedef std::list<Student> StudentList_t;
 class StudentList {
 public:
 
-    //be able to insert/retrieve students (by Id).
+    //todo be able to insert/retrieve students (by Id).
     int insertStudent(Student &student);
 
     int retrieve(Student student);
