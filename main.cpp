@@ -78,20 +78,6 @@ int main() {
     std::cout << std::endl;
 
 
-    //add a grade to a student of discipline1
-    //disciplineList.addGradeToStudent(student1, discipline1, 10);
-
-    //display all grades of a student ordered by year and semester
-    //disciplineList.displayStudentsGrades( student1);
-
-
-    //disciplineList.displayStudentsGrades(discipline1);
-
-
-
-
-    //add a grade to a student of discipline1
-
 
 
 

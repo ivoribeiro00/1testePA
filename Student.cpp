@@ -68,6 +68,7 @@ int StudentList::insertStudent(Student &student) {
 
 }
 
+/*
 void Student::addGrade(int grade) {
     grades.push_back(grade);
 }
@@ -121,19 +122,8 @@ double Student::getStandardDeviation() const {
     double variance = sum / grades.size();
     return sqrt(variance);
 }
+ */
 
-void Student::getDisciplines() {
-
-    //todo get all the disciplines of the student
-}
-
-void Student::displayGrades() {
-
-    //todo display all the grades of the student
-
-
-
-}
 
 
 

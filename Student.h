@@ -11,7 +11,6 @@
 #include <vector>
 
 
-
 class Student {
 
 public:
@@ -30,7 +29,6 @@ public:
 
     const std::string &getName() const;
 
-
     void addGrade(int grade);
 
     int getMinGrade() const;
@@ -42,17 +40,12 @@ public:
     double getStandardDeviation() const;
 
 
-    void getDisciplines();
-
-    void displayGrades();
-
 private:
     std::uint32_t student_id;
     std::string name;
     std::uint32_t birthDate;
     std::uint32_t email;
 
-    std::vector<int> grades;
 };
 
 typedef std::list<Student> StudentList_t;

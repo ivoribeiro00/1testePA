@@ -55,11 +55,6 @@ public:
 
     void displayStudentsOfDiscipline(Discipline discipline);
 
-    //todo display students grades of a discipline
-    void displayStudentsGrades(Student &student);
-
-
-    void addGradeToStudent(Student &student, Discipline &discipline, float grade);
 
 private:
     DisciplineList_t list_of_discipline;
