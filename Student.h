@@ -31,14 +31,14 @@ public:
     const std::string &getName() const;
 
     //todo Add a grade to the student
-    void addGrade(const Grade &grade);
+    void addGrade(Grade &grade);
 
     //todo  Display the grades of the student
     void displayGrades() const;
 
     std::vector<Grade *> getGradesByYearSemester() const;
 
-
+    void displayStudentGrades(Student *student);
 
 
 private:
@@ -50,7 +50,7 @@ private:
     ListOfGrades grades;
 
 
-    void displayStudentGrades(Student *student);
+
 };
 
 typedef std::list<Student> StudentList_t;

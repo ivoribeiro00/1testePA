@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <vector>
+#include <map>
 #include "Discipline.h"
 
 
@@ -53,6 +54,7 @@ bool Discipline::constainsStudent(const Student &student) const {
     return false;
 }
 
+
 void Discipline::addStudent(Student &student) {
     //todo check if the student is already enrolled in the discipline
     if (this->constainsStudent(student)) {
@@ -68,7 +70,6 @@ void Discipline::addStudent(Student &student) {
 const std::string &Discipline::getCode() const {
     return code;
 }
-
 
 void DisciplineList::displayStudentsOfDiscipline(Discipline discipline) {
 
@@ -90,18 +91,7 @@ void DisciplineList::addStudentToDiscipline(Student &student, Discipline &discip
 }
 
 
-/*
-bool DisciplineList::containsDiscipline(Discipline &discipline) const {
-    //todo  iterate over the list of discipline
-    for (const auto &d: list_of_discipline) {
-        //todo compare the given discipline with each discipline in the list
-        if (d.getName() == discipline.getName()) {
-            return true;
-        }
-    }
-    return false;
-}
- */
+
 
 
 

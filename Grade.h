@@ -17,6 +17,7 @@ public:
 
     Grade(float value, Student *student, Discipline *discipline);
 
+
     float getValue() const;
 
     Student *getStudent() const;
@@ -42,6 +43,17 @@ typedef std::list<Grade> ListOfGrades;
 
 class GradeList {
 public:
+
+    //todo displayClassGradesStatistics
+    void displayClassGradesStatistics(const GradeList &gradeList);
+
+    const ListOfGrades &getListOfGrades() const;
+
+    //displayGradesStudent
+    void displayGradesStudent(const Student &student) const;
+
+    //addGrade
+    void addGrade(float value, Student *student, Discipline *discipline);
 
 
 private:

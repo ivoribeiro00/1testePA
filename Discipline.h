@@ -36,13 +36,13 @@ public:
 
     const std::string &getCode() const;
 
+
 private:
     std::string name;
     std::string code;
     int semester;
     int year;
     std::list<Student *> students;
-
 
 };
 

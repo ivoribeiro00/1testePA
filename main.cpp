@@ -77,7 +77,26 @@ int main() {
     std::cout << std::endl;
     std::cout << std::endl;
 
-    //add a grade to a student in a discipline
+
+
+    GradeList gradeList;
+    Grade grade(9.5, &student1, &discipline1);
+    // Create a grade
+    gradeList.addGrade(9.5, &student1, &discipline1);
+
+    // Add grade to student
+    student1.addGrade(grade);
+
+    gradeList.displayGradesStudent(student1);
+    // Print the student's grades
+    student1.displayGrades();
+
+
+
+    //discipline1.displayGradesDiscipline(discipline1);
+    //student1.displayStudentGrades(&student1);
+
+
 
 
 
