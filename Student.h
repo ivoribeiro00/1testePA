@@ -36,6 +36,9 @@ public:
     //todo  Display the grades of the student
     void displayGrades() const;
 
+    std::vector<Grade *> getGradesByYearSemester() const;
+
+
 
 
 private:
@@ -47,6 +50,7 @@ private:
     ListOfGrades grades;
 
 
+    void displayStudentGrades(Student *student);
 };
 
 typedef std::list<Student> StudentList_t;

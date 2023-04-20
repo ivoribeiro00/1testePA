@@ -31,6 +31,10 @@ private:
     int year;
     int semester;
 
+public:
+    int getYear() const;
+
+    int getSemester() const;
 
 };
 

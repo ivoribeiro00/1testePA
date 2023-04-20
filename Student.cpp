@@ -78,14 +78,39 @@ void Student::displayGrades() const {
         std::cout << "No grades available." << std::endl;
     } else {
         std::cout << "Grades:" << std::endl;
-        for (const Grade &grade : grades) {
+        for (const Grade &grade: grades) {
             // Display the value of the grade
             std::cout << "Value: " << grade.getValue() << std::endl;
             // Display other relevant information about the grade, e.g., discipline, year, etc.
             std::cout << "Discipline: " << grade.getDiscipline() << std::endl;
         }
+
+
     }
 }
+
+void Student::displayStudentGrades(Student *student) {
+    if (grades.empty()) {
+        std::cout << "No grades available." << std::endl;
+    } else {
+        std::cout << "Grades:" << std::endl;
+        /*for (const Grade &grade : grades) {
+            // Display the value of the grade
+            std::cout << "Value: " << grade.getValue() << std::endl;
+            // Display other relevant information about the grade, e.g., discipline, year, etc.
+            std::cout << "Discipline: " << grade.getDiscipline() << std::endl;
+        */
+        std::cout << "Grades for " << student->getName() << ":" << std::endl;
+        std::vector<Grade *> sorted_grades = student->getGradesByYearSemester();
+        for (auto grade: sorted_grades) {
+            std::cout << "Year: " << grade->getYear()
+                      << " Semester: " << grade->getSemester()
+                      << " Discipline: " << grade->getDiscipline()->getName()
+                      << " Grade: " << grade->getValue() << std::endl;
+        }
+    }
+}
+
 
 /*
 void Student::addGrade(int grade) {
