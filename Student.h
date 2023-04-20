@@ -10,6 +10,7 @@
 #include <list>
 #include <vector>
 
+#include "common.h"
 
 class Student {
 
@@ -29,22 +30,15 @@ public:
 
     const std::string &getName() const;
 
-    void addGrade(int grade);
-
-    int getMinGrade() const;
-
-    int getMaxGrade() const;
-
-    double getAverageGrade() const;
-
-    double getStandardDeviation() const;
-
 
 private:
     std::uint32_t student_id;
     std::string name;
     std::uint32_t birthDate;
     std::uint32_t email;
+    //ListOfGrades grades;
+    ListOfGrades grades;
+
 
 };
 

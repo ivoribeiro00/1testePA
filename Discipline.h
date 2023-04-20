@@ -34,6 +34,7 @@ public:
 
     void displayGradesDiscipline(Discipline &discipline);
 
+    const std::string &getCode() const;
 
 private:
     std::string name;
@@ -55,6 +56,8 @@ public:
 
     void displayStudentsOfDiscipline(Discipline discipline);
 
+
+    void addGradeToStudent(Student student, Discipline discipline, int i);
 
 private:
     DisciplineList_t list_of_discipline;

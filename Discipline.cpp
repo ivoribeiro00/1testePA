@@ -65,7 +65,9 @@ void Discipline::addStudent(Student &student) {
 
 }
 
-
+const std::string &Discipline::getCode() const {
+    return code;
+}
 
 
 void DisciplineList::displayStudentsOfDiscipline(Discipline discipline) {
@@ -74,7 +76,6 @@ void DisciplineList::displayStudentsOfDiscipline(Discipline discipline) {
     discipline.DisplayOrder();
 
 }
-
 
 void DisciplineList::addStudentToDiscipline(Student &student, Discipline &discipline) {
 
@@ -87,6 +88,7 @@ void DisciplineList::addStudentToDiscipline(Student &student, Discipline &discip
     discipline.addStudent(student);
 
 }
+
 
 /*
 bool DisciplineList::containsDiscipline(Discipline &discipline) const {
