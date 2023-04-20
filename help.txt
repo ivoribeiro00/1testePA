@@ -12,6 +12,7 @@ OK
 
 - You need to be able to display all grades of a student (ordered
  by year and semester).
+ OK
 
 //no estudante quero a nota da disciplina AED
 //lista de estudantes na disciplina
