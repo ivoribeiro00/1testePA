@@ -37,6 +37,7 @@ const std::string &Student::getName() const {
     return name;
 }
 
+
 void StudentList::displayAllStudents() {
     for (auto &student: this->list_of_student) {
         student.display();
@@ -66,6 +67,24 @@ int StudentList::insertStudent(Student &student) {
     this->list_of_student.push_back(student);
     return 0;
 
+}
+
+void Student::addGrade(const Grade &grade) {
+    grades.push_back(grade);
+}
+
+void Student::displayGrades() const {
+    if (grades.empty()) {
+        std::cout << "No grades available." << std::endl;
+    } else {
+        std::cout << "Grades:" << std::endl;
+        for (const Grade &grade : grades) {
+            // Display the value of the grade
+            std::cout << "Value: " << grade.getValue() << std::endl;
+            // Display other relevant information about the grade, e.g., discipline, year, etc.
+            std::cout << "Discipline: " << grade.getDiscipline() << std::endl;
+        }
+    }
 }
 
 /*

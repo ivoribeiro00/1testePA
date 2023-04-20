@@ -17,14 +17,20 @@ public:
 
     Grade(float value, Student *student, Discipline *discipline);
 
-    const Grade &getValue();
+    float getValue() const;
+
+    Student *getStudent() const;
+
+    Discipline *getDiscipline() const;
+
 
 private:
-    //std::list<Discipline*> disciplines;
-    //std::list<Student*> students;
     float value;
+    Student *student;
+    Discipline *discipline;
     int year;
     int semester;
+
 
 };
 
@@ -32,6 +38,11 @@ typedef std::list<Grade> ListOfGrades;
 
 class GradeList {
 public:
+
+    void addGrade(const Grade &grade);
+
+    float getGradeAverage() const;
+
 private:
     ListOfGrades list_of_grades;
 };

@@ -30,6 +30,13 @@ public:
 
     const std::string &getName() const;
 
+    //todo Add a grade to the student
+    void addGrade(const Grade &grade);
+
+    //todo  Display the grades of the student
+    void displayGrades() const;
+
+
 
 private:
     std::uint32_t student_id;
