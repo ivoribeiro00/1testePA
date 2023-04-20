@@ -43,9 +43,6 @@ typedef std::list<Grade> ListOfGrades;
 class GradeList {
 public:
 
-    void addGrade(const Grade &grade);
-
-    float getGradeAverage() const;
 
 private:
     ListOfGrades list_of_grades;

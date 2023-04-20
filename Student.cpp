@@ -101,7 +101,9 @@ void Student::displayStudentGrades(Student *student) {
             std::cout << "Discipline: " << grade.getDiscipline() << std::endl;
         */
         std::cout << "Grades for " << student->getName() << ":" << std::endl;
+
         std::vector<Grade *> sorted_grades = student->getGradesByYearSemester();
+
         for (auto grade: sorted_grades) {
             std::cout << "Year: " << grade->getYear()
                       << " Semester: " << grade->getSemester()
