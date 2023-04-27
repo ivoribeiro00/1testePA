@@ -28,12 +28,6 @@ public:
 
     const int &getYear() const;
 
-    //Display the grades of a student in a discipline
-
-    void displayGradesStudent(Student &student);
-
-    void displayGradesDiscipline(Discipline &discipline);
-
     const std::string &getCode() const;
 
 
@@ -56,13 +50,9 @@ public:
 
     void displayStudentsOfDiscipline(Discipline discipline);
 
-
-    void addGradeToStudent(Student student, Discipline discipline, int i);
-
 private:
     DisciplineList_t list_of_discipline;
     std::list<Student *> students;
-    //std::list<Student*> students;
 
 
 };

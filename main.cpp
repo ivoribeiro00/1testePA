@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 
 #include "Student.h"
 #include "Discipline.h"
@@ -6,8 +7,6 @@
 
 
 int main() {
-
-
 
     Student student1("Ivo José Bento Ribeiro", 11109322);
     Student student2("Afonso Gil Chorao Abreu Cunha", 11108821);
@@ -77,31 +76,31 @@ int main() {
     std::cout << std::endl;
     std::cout << std::endl;
 
+    //get code of discipline and print it
+    std::cout << "Code of discipline: " << discipline1.getCode() << std::endl;
 
-
+    //add grade to a student of a discipline
     GradeList gradeList;
-    Grade grade(9.5, &student1, &discipline1);
-    // Create a grade
-    gradeList.addGrade(9.5, &student1, &discipline1);
 
-    // Add grade to student
-    student1.addGrade(grade);
+    gradeList.addGradeToStudentOfDiscipline(student1, discipline1, 10);
 
-    gradeList.displayGradesStudent(student1);
-    // Print the student's grades
-    student1.displayGrades();
+    gradeList.addGradeToStudentOfDiscipline(student2, discipline1, 12);
 
+    //display all grades of a discipline
 
+    gradeList.displayGradesOfDiscipline(discipline1);
 
-    //discipline1.displayGradesDiscipline(discipline1);
-    //student1.displayStudentGrades(&student1);
+    //display all grades of a student
 
+    gradeList.displayGradesOfStudent(student1);
 
+   //display all grades of a student (ordered by year and semester)
 
+    gradeList.displayGradesOfStudentOrderedByYearAndSemester(student1);
 
+    //display minimum, maximum, average and standard deviation of all grades of a discipline
 
-
-
+    gradeList.displayStatisticsOfDiscipline(discipline1);
 
     return 0;
 }

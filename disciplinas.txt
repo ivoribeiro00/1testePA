@@ -1,11 +1,31 @@
-L9011	Complementos de Analise Matematica
-L9012	Fisica
-L9013	Complementos de Programação
-L9014	Algoritmos e Estruturas de Dados
-L9015	Redes de Comunicação
-L9016	Probabilidades e Estatistica
-L9017	Base de Dados
-L9018	Programação Avançada
-L9019	Computação e Representação Grafica
-L9020	Historia da Cultura Portuguesa
-L9021	Etica
+L9001;1;1;Introdução à análise matemática
+L9002;1;1;Álgebra linear
+L9003;1;2;Análise de sistemas
+L9004;1;1;Introdução à programação
+L9005;1;1;Sistemas digitais
+L9006;1;2;Análise matemática
+L9007;1;2;Introdução à física
+L9008;1;2;Programação
+L9009;1;2;Introdução aos algoritmos e estrutura de dados
+L9010;1;1;Arquitectura de computadores
+L9011;2;1;Complementos de análise matemática
+L9012;2;1;Física
+L9013;2;1;Complementos de programação
+L9014;2;1;Algoritmos e estruturas de dados
+L9015;2;1;Redes de comunicação
+L9016;2;2;Probabilidades e estatística
+L9017;2;2;Bases de dados
+L9018;2;2;Programação avançada
+L9019;2;2;Computação e representação gráfica
+L9020;2;2;História da cultura portuguesa
+L9021;2;2;Ética	Ciências complementares
+L9022;3;1;Sistemas operativos
+L9023;3;2;Compiladores
+L9024;3;1;Circuitos eléctricos e electrónicos
+L9025;3;1;Redes de computadores
+L9026;3;2;Introdução à economia
+L9027;3;1;Inteligência artificial
+L9028;3;2;Sistemas distribuídos
+L9029;3;2;Introdução à gestão
+L9030;3;1;Teoria da computação
+L9031;3;2;Engenharia da programação

@@ -45,6 +45,9 @@ void StudentList::displayAllStudents() {
 }
 
 int StudentList::retrieve(Student student) {
+    //printf retrieve was successful
+    std::cout << "Trying to retrieve student:" << std::endl;
+
     for (auto &student_: this->list_of_student) {
         if (student_.getStudentId() == student.getStudentId()) {
             student.display();
@@ -68,99 +71,6 @@ int StudentList::insertStudent(Student &student) {
     return 0;
 
 }
-
-void Student::addGrade(Grade &grade) {
-    grades.push_back(grade);
-}
-
-void Student::displayGrades() const {
-    if (grades.empty()) {
-        std::cout << "No grades available." << std::endl;
-    } else {
-        std::cout << "Grades:" << std::endl;
-        for (const Grade &grade: grades) {
-            std::cout << "Discipline: " << grade.getDiscipline() << " Value: " << grade.getValue() << std::endl;
-        }
-    }
-}
-
-void Student::displayStudentGrades(Student *student) {
-    if (grades.empty()) {
-        std::cout << "No grades available." << std::endl;
-    } else {
-
-        std::cout << "Grades for " << student->getName() << ":" << std::endl;
-
-        std::vector<Grade *> sorted_grades = student->getGradesByYearSemester();
-
-        for (auto grade: sorted_grades) {
-            std::cout << "Year: " << grade->getYear()
-                      << " Semester: " << grade->getSemester()
-                      << " Discipline: " << grade->getDiscipline()->getName()
-                      << " Grade: " << grade->getValue() << std::endl;
-        }
-    }
-}
-
-
-
-
-/*
-void Student::addGrade(int grade) {
-    grades.push_back(grade);
-}
-
-int Student::getMinGrade() const {
-    if (grades.empty()) {
-        return 0; // Return a default value if no grades exist
-    }
-    int minGrade = grades[0];
-    for (int i = 1; i < grades.size(); ++i) {
-        if (grades[i] < minGrade) {
-            minGrade = grades[i];
-        }
-    }
-    return minGrade;
-}
-
-int Student::getMaxGrade() const {
-    if (grades.empty()) {
-        return 0; // Return a default value if no grades exist
-    }
-    int maxGrade = grades[0];
-    for (int i = 1; i < grades.size(); ++i) {
-        if (grades[i] > maxGrade) {
-            maxGrade = grades[i];
-        }
-    }
-    return maxGrade;
-}
-
-double Student::getAverageGrade() const {
-    if (grades.empty()) {
-        return 0.0; // Return a default value if no grades exist
-    }
-    int sum = 0;
-    for (int grade: grades) {
-        sum += grade;
-    }
-    return static_cast<double>(sum) / grades.size();
-}
-
-double Student::getStandardDeviation() const {
-    if (grades.empty()) {
-        return 0.0; // Return a default value if no grades exist
-    }
-    double average = getAverageGrade();
-    double sum = 0.0;
-    for (int grade: grades) {
-        sum += pow(grade - average, 2);
-    }
-    double variance = sum / grades.size();
-    return sqrt(variance);
-}
- */
-
 
 
 

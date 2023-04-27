@@ -15,8 +15,7 @@ class Grade {
     //eu preciso da nota
 public:
 
-    Grade(float value, Student *student, Discipline *discipline);
-
+    Grade(float value, Student *student, Discipline *discipline, int year, int semester);
 
     float getValue() const;
 
@@ -43,18 +42,21 @@ typedef std::list<Grade> ListOfGrades;
 
 class GradeList {
 public:
-
-    //todo displayClassGradesStatistics
-    void displayClassGradesStatistics(const GradeList &gradeList);
-
     const ListOfGrades &getListOfGrades() const;
-
-    //displayGradesStudent
-    void displayGradesStudent(const Student &student) const;
 
     //addGrade
     void addGrade(float value, Student *student, Discipline *discipline);
 
+
+    void addGradeToStudentOfDiscipline(Student &student, Discipline &discipline, int i);
+
+    void displayGradesOfDiscipline(Discipline discipline);
+
+    void displayGradesOfStudent(Student student);
+
+    void displayGradesOfStudentOrderedByYearAndSemester(Student student);
+
+    void displayStatisticsOfDiscipline(Discipline discipline);
 
 private:
     ListOfGrades list_of_grades;
