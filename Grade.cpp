@@ -22,16 +22,25 @@ const ListOfGrades &GradeList::getListOfGrades() const {
 void GradeList::addGradeToStudentOfDiscipline(Student &student, Discipline &discipline, int i) {
 
     //todo check if the student is enrolled in the discipline
+    if (!discipline.constainsStudent(student)) {
+        std::cout << "Student " << student.getName() << " is not enrolled in the discipline" << std::endl;
+        //std::cout << "Student is not enrolled in the discipline" << std::endl;
+        return;
+    }
+
     //todo check if the student already has a grade in the discipline
     for (auto &grade: this->list_of_grades) {
         if (grade.getDiscipline()->getCode() == discipline.getCode() &&
             grade.getStudent()->getStudentId() == student.getStudentId()) {
-            std::cout << "Student already has a grade in this discipline" << std::endl;
+            std::cout << "Student " << student.getName() << " already has a grade in this discipline" << std::endl;
             return;
         }
     }
     Grade grade(i, &student, &discipline, discipline.getYear(), discipline.getSemester());
     this->list_of_grades.push_back(grade);
+    //print the grade has been added
+    std::cout << "The Grade " << i << " has been added to student " << student.getName() << " in discipline "
+              << discipline.getName() << std::endl;
 
 }
 

@@ -7,7 +7,11 @@
 
 
 int main() {
+    StudentList studentList;
+    DisciplineList disciplineList;
+    GradeList gradeList;
 
+    //todo region Students
     Student student1("Ivo José Bento Ribeiro", 11109322);
     Student student2("Afonso Gil Chorao Abreu Cunha", 11108821);
     Student student3("Breno Kiniane Faustino De Oliveira", 11094620);
@@ -27,11 +31,12 @@ int main() {
     Student student17("Tomas Madeira Carrasco Guilherme", 11094421);
     Student student18("Xavier Maria Marta De Barros", 11038021);
 
+    //todo region Disciplines
     Discipline discipline1("Complementos de Analise Matematica", "L9011", 1, 2);
     Discipline discipline2("Fisica", "L9012", 1, 1);
     Discipline discipline3("Complementos de Programação", "L9013", 1, 1);
     Discipline discipline4("Algoritmos e Estruturas de Dados", "L9014", 1, 1);
-    Discipline disciplin5("Redes de Comunicação", "L9015", 1, 1);
+    Discipline discipline5("Redes de Comunicação", "L9015", 1, 1);
     Discipline discipline6("Probabilidades e Estatistica", "L9016", 1, 2);
     Discipline discipline7("Base de Dados", "L9017", 1, 2);
     Discipline discipline8("Programacao Avancada", "L9018", 1, 2);
@@ -39,37 +44,37 @@ int main() {
     Discipline discipline10("Historia da Cultura Portuguesa", "L9020", 1, 2);
     Discipline discipline11("Etica", "L9021", 1, 2);
 
-
-    StudentList studentList;
+    //todo insert students
     studentList.insertStudent(student2);
     studentList.insertStudent(student3);
     studentList.insertStudent(student1);
-    studentList.displayAllStudents();
-
-    studentList.insertStudent(student1);
-    studentList.retrieve(student1);
-
-
     studentList.insertStudent(student4);
 
-    //printf /n
+    //todo display all students from the list
+    studentList.displayAllStudents();
+
+    //todo try to inser student1 again and display the result (error)
+    studentList.insertStudent(student1);
+    //todo retrieve student1 information
+    studentList.retrieve(student1);
+
+    //todo printf /n
     std::cout << std::endl;
 
 
-    DisciplineList disciplineList;
-    //add a student to a discipline
+    //todo add a student to a discipline
     disciplineList.addStudentToDiscipline(student1, discipline1);
+    disciplineList.addStudentToDiscipline(student1, discipline5);
     disciplineList.addStudentToDiscipline(student2, discipline1);
-    //disciplineList.addStudentToDiscipline(student15, discipline1);
     disciplineList.addStudentToDiscipline(student4, discipline1);
     disciplineList.addStudentToDiscipline(student3, discipline1);
-    disciplineList.addStudentToDiscipline(student8,discipline1);
-    disciplineList.addStudentToDiscipline(student15,discipline1);
-    disciplineList.addStudentToDiscipline(student16,discipline1);
-    disciplineList.addStudentToDiscipline(student14,discipline1);
+    disciplineList.addStudentToDiscipline(student8, discipline1);
+    disciplineList.addStudentToDiscipline(student15, discipline1);
+    disciplineList.addStudentToDiscipline(student16, discipline1);
+    disciplineList.addStudentToDiscipline(student14, discipline1);
 
 
-
+    //todo display all students of a discipline ordered by name alphabetically
     disciplineList.displayStudentsOfDiscipline(discipline1);
     //printf /n
     std::cout << std::endl;
@@ -77,29 +82,36 @@ int main() {
     std::cout << std::endl;
 
     //get code of discipline and print it
-    std::cout << "Code of discipline: " << discipline1.getCode() << std::endl;
+    //std::cout << "Code of discipline: " << discipline1.getCode() << std::endl;
 
-    //add grade to a student of a discipline
-    GradeList gradeList;
+    //todo grades region
 
+    //todo add grade to a student of a discipline
     gradeList.addGradeToStudentOfDiscipline(student1, discipline1, 10);
-
     gradeList.addGradeToStudentOfDiscipline(student2, discipline1, 12);
 
-    //display all grades of a discipline
+    //todo \n
+    std::cout << std::endl;
 
+    std::cout << " Testing error's: " << std::endl;
+    //todo try to insert a grade to a student that is already in the discipline (error)
+    gradeList.addGradeToStudentOfDiscipline(student1, discipline1, 11);
+    //todo try to insert a grade to a student that is not in the discipline (error)
+    gradeList.addGradeToStudentOfDiscipline(student1, discipline2, 12);
+
+    // \n
+    std::cout << std::endl;
+
+    //todo display all grades of a discipline
     gradeList.displayGradesOfDiscipline(discipline1);
 
-    //display all grades of a student
-
+    //todo display all grades of a student
     gradeList.displayGradesOfStudent(student1);
 
-   //display all grades of a student (ordered by year and semester)
-
+    //todo display all grades of a student (ordered by year and semester)
     gradeList.displayGradesOfStudentOrderedByYearAndSemester(student1);
 
-    //display minimum, maximum, average and standard deviation of all grades of a discipline
-
+    //todo display minimum, maximum, average and standard deviation of all grades of a discipline
     gradeList.displayStatisticsOfDiscipline(discipline1);
 
     return 0;
