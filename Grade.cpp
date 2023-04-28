@@ -102,8 +102,10 @@ void GradeList::displayGradesOfStudentOrderedByYearAndSemester(Student student) 
                   return a.getYear() < b.getYear();
               });
 
+    std::cout << "All Grades of student: " << student.getName() << ", Ordered by Year and Semester" << std::endl;
     for (auto &grade: grades) {
-        std::cout << grade.getDiscipline()->getName() << " " << grade.getYear() << " " << grade.getSemester() << " "
+
+        std::cout << grade.getDiscipline()->getName() << " year: " << grade.getYear() << " semester: " << grade.getSemester() << " grade: "
                   << grade.getValue() << std::endl;
 
     }
@@ -124,6 +126,8 @@ void GradeList::displayStatisticsOfDiscipline(Discipline discipline) {
               [](Grade a, Grade b) {
                   return a.getValue() < b.getValue();
               });
+    std::cout << std::endl;
+    std::cout << "Statistics of discipline: " << discipline.getName() << std::endl;
     std::cout << "Min: " << grades[0].getValue() << std::endl;
     std::cout << "Max: " << grades[grades.size() - 1].getValue() << std::endl;
     float sum = 0;
