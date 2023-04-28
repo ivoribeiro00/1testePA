@@ -89,7 +89,7 @@ int main() {
     //todo add grade to a student of a discipline
     gradeList.addGradeToStudentOfDiscipline(student1, discipline1, 10);
     gradeList.addGradeToStudentOfDiscipline(student2, discipline1, 12);
-
+    gradeList.addGradeToStudentOfDiscipline(student1, discipline5, 15);
     //todo \n
     std::cout << std::endl;
 
@@ -99,14 +99,20 @@ int main() {
     //todo try to insert a grade to a student that is not in the discipline (error)
     gradeList.addGradeToStudentOfDiscipline(student1, discipline2, 12);
 
-    // \n
+    //todo \n
     std::cout << std::endl;
 
     //todo display all grades of a discipline
     gradeList.displayGradesOfDiscipline(discipline1);
 
+    //todo \n
+    std::cout << std::endl;
+
     //todo display all grades of a student
     gradeList.displayGradesOfStudent(student1);
+
+    //todo \n
+    std::cout << std::endl;
 
     //todo display all grades of a student (ordered by year and semester)
     gradeList.displayGradesOfStudentOrderedByYearAndSemester(student1);

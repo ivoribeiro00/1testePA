@@ -57,6 +57,7 @@ void GradeList::displayGradesOfDiscipline(Discipline discipline) {
               [](Grade a, Grade b) {
                   return a.getStudent()->getName() < b.getStudent()->getName();
               });
+    std::cout << "Grades of discipline: " << discipline.getName() << std::endl;
     for (auto &grade: grades) {
         std::cout << grade.getStudent()->getName() << " " << grade.getValue() << std::endl;
     }
@@ -76,6 +77,7 @@ void GradeList::displayGradesOfStudent(Student student) {
               [](Grade a, Grade b) {
                   return a.getDiscipline()->getName() < b.getDiscipline()->getName();
               });
+    std::cout << "Grades of student: " << student.getName() << std::endl;
     for (auto &grade: grades) {
         std::cout << grade.getDiscipline()->getName() << " " << grade.getValue() << std::endl;
     }
